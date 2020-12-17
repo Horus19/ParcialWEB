@@ -16,15 +16,14 @@
         $('#DatosEditados').hide();
     });
 
-    
-
-
     </script>
 </head>
 <body>
-    <form action="http://recursoEnServidor" onsubmit="return validarForma()" id="forma">
-        <table class="table table-dark table-striped">
-            <thead>
+<div style="width: 100%;height: 40px"></div>
+<div style="width:800px;margin-left: 10%;margin-right: 10%">
+    <form action="pru.html" method="get" onsubmit="return validar()" id="forma">
+        <table class="table" style="width: 1200px">
+            <thead style="background-color: dimgrey;color: aliceblue">
               <tr>
                 <th scope="col">Alimento</th>
                 <th scope="col">Calorias</th>
@@ -35,7 +34,7 @@
                 <th scope="col">Opciones</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody style="background-color: aliceblue">
 
 
               <tr id="coll1">
@@ -47,19 +46,13 @@
                     <td>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c.552 0 1-.672 1-1.5S10.552 5 10 5s-1 .672-1 1.5S9.448 8 10 8z"/>
-                        </svg></td>
+                        </svg>
+                    </td>
                      <td>
                         <button type="button" class="btn btn-primary" onclick="editarRow('coll1')">Editar</button>
                      </td>   
                 </tr>
-        
-                
-                
-               
-             
 
-
-                    
                 <tr id="coll2">
                     <td>Platano</td>
                     <td>49</td>
@@ -69,7 +62,8 @@
                     <td>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c.552 0 1-.672 1-1.5S10.552 5 10 5s-1 .672-1 1.5S9.448 8 10 8z"/>
-                        </svg></td>
+                        </svg>
+                    </td>
                         <td>
                             <button type="button" class="btn btn-primary" onclick="editarRow('coll2')">Editar</button>
                          </td>    
@@ -85,22 +79,24 @@
                         <td>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c.552 0 1-.672 1-1.5S10.552 5 10 5s-1 .672-1 1.5S9.448 8 10 8z"/>
-                            </svg></td>
+                            </svg>
+                        </td>
                             <td>
                                 <button type="button" class="btn btn-primary" onclick="editarRow('coll3')">Editar</button>
                              </td>    
                         </tr>
             </tbody>
           </table>
-
+        <p>Contenido nutricional por cada 100g de alimento</p>
+        <div style="height: 20px"></div>
 
           <div id="DatosEditados">
 
             <p>Pulse Aceptar para guardar los datos o cancelar para anularlos</p>
-            <button name="enviar" value="enviar" type="submit" class="boton">Enviar</button>
-            <button class="btn btn-outline-secondary" id="btnCancel" type="reset" onclick="location.reload()">Cancelar</button>
+            <button  type="submit" class="btn btn-outline-secondary">Guardar</button>
+            <button class="btn btn-outline-danger" id="btnCancel" type="reset" onclick="location.reload()">Cancelar</button>
 
           </div>
     </form>
-
+</div>
 </body>
