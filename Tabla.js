@@ -37,7 +37,7 @@ function editarRow(etiqueta)
                 "  \t\t\t\t<option value=\"Mal\">Mal</option>\n" +
                 "\t\t\t\t</select>\n" +
                 "                         <td>\n" +
-                "                            <button onclick=\"\">En edicion</button>\n" +
+                "                            <button class='btn btn-secondary\' onclick=\"\">En edicion</button>\n" +
                 "                         </td>   \n" +
                 "                    </tr> \n";
 
