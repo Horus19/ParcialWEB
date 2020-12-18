@@ -17,7 +17,7 @@ function editarRow(etiqueta)
             var Row = document.getElementById(etiqueta);
             Row.innerHTML="<tr id=\"coll1_2\">\n" +
                 "                        <td>\n" +
-                "                            <input name = 'alimento' id=\"item1\" value=\"Ingrese nombre alimento\">\n" +
+                "                            <input name = 'alimento' id=\"item1\" value=\"Ingrese nombre alimento\" onfocus='this.select();'>\n" +
                 "                        </td>\n" +
                 "                        <td>\n" +
                 "                            <input name = 'calorias' type='number' id=\"item2\" value=\"Ingrese cantidad de calorias\">\n" +
@@ -37,7 +37,7 @@ function editarRow(etiqueta)
                 "  \t\t\t\t<option value=\"Mal\">Mal</option>\n" +
                 "\t\t\t\t</select>\n" +
                 "                         <td>\n" +
-                "                            <button class='btn btn-secondary\' onclick=\"\">En edicion</button>\n" +
+                "                            <button class='btn btn-secondary\' type='reset'>En edicion</button>\n" +
                 "                         </td>   \n" +
                 "                    </tr> \n";
 
